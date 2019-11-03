@@ -29,8 +29,8 @@ mongoose.connect(config.DB, { useNewUrlParser: true }).then(
 );
 
 // setting up primary route
-app.use('/product', proRoutes);
+app.use('/', proRoutes);
 
 app.listen(PORT, function() {
-  console.log('Server is running on url http://localhost:4000/product');
+  console.log('Server is running on url http://localhost:5000/product');
 });
